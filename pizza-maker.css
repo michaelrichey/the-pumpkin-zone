@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+  }
+  
+  .grid{
+    display: grid;
+    grid-template-areas:
+      "head head head"
+      "lframe main box3";
+    background-color: #daa831;
+    font-family: fantasy;
+  }
+  
+  .head {
+    border: 40px red solid;
+    border-image-source: url(images/pizza-border-1.gif);
+    border-image-slice: 70;
+    border-image-repeat: round;
+    grid-area: head;
+    text-align: center;
+  }
+  
+  .main {
+    border: 10px red solid;
+    border-image-source: url(images/pizza-border-1.gif);
+    border-image-slice: 70;
+    border-image-repeat: round;
+    grid-area: main;
+    padding: 3%;
+  }
+  
+  .lframe {
+    border: 10px red solid;
+    border-image-source: url(images/pizza-border-1.gif);
+    border-image-slice: 70;
+    border-image-repeat: round;
+    grid-area: lframe;
+    padding: 3%;
+  }
+  
+  .box3 {
+    border: 10px red solid;
+    border-image-source: url(images/pizza-border-1.gif);
+    border-image-slice: 70;
+    border-image-repeat: round;
+    grid-area: box3;
+    padding: 3%;
+  }
+  
