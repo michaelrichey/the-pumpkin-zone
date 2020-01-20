@@ -1,11 +1,11 @@
 const ingredients = [
     {
       name: 'wine',
-      price: 'asdf'
+      price: '13'
     },
     {
       name: 'brine',
-      price: 'asdf'
+      price: '50'
     },
     {
       name: 'swine',
