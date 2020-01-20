@@ -9,7 +9,7 @@ const ingredients = [
     },
     {
       name: 'swine',
-      price: 'asdf'
+      price: '200'
     },
     {
       name: 'Kevin Kline',
