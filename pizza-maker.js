@@ -16,7 +16,7 @@ const ingredients = [
   
   const message = function (x) {
   
-    document.querySelector('#welcome').innerHTML = '<button id="submit-toppings">SUBMIT ORDER</button>'
+    document.querySelector('#welcome').innerHTML = ''
   
     x.forEach(function (item) {
       const generateText = document.createElement('p')
