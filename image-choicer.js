@@ -1,40 +1,60 @@
 const picList = [
     {
         filename: 'picture-choice-fk.png',
-        id: 'funky'
+        value: 'funky',
+        text: 'Funky Kong'
     },
     {
         filename: 'picture-choice-tators.jpg',
-        id: 'tators'
+        value: 'tators',
+        text: 'Funky Kong'
     },
     {
         filename: 'picture-choice-contra.png',
-        id: 'contra'
+        value: 'contra',
+        text: 'Funky Kong'
     },
     {
         filename: 'picture-choice-ffix.png',
-        id: 'ffix'
+        value: 'ffix',
+        text: 'Funky Kong'
     },
     {
         filename: 'picture-choice-nba-jam.jpg',
-        id: 'nba'
+        value: 'nba',
+        text: 'Funky Kong'
     },
     {
         filename: 'picture-choice-pbcrisps.png',
-        id: 'pb'
+        value: 'pb',
+        text: 'Funky Kong'
     },
     {
         filename: 'picture-choice-pepsi.jpg',
-        id: 'pepsi'
+        value: 'pepsi',
+        text: 'Funky Kong'
     },
 ]
+
+picList.forEach(function (item) {
+
+    const generateOptions = document.createElement('option')
+    const setVal = document.createAttribute('value')
+    setVal.value = item.value
+    generateOptions.setAttributeNode(setVal)
+    generateOptions.innerHTML = item.text
+    document.querySelector("#dropdown").appendChild(generateOptions)
+
+})
+
+
 
 document.querySelector("#dropdown").addEventListener('change', function (e) {
     console.log(e.target.value)
 
     let getPic = picList.forEach(function (item) {
-        if (e.target.value === item.id) {
-            console.log('if statement ' + item.id)
+        if (e.target.value === item.value) {
+            console.log('if statement ' + item.value)
             console.log('if statement ' + item.filename)
             document.querySelector("#picture-zone").innerHTML = `<img src="images/${item.filename}">`
         } else {
@@ -43,7 +63,6 @@ document.querySelector("#dropdown").addEventListener('change', function (e) {
     })
 
     getPic(picList)
-
 
 })
 
