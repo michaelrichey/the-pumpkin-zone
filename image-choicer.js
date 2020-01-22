@@ -7,32 +7,32 @@ const picList = [
     {
         filename: 'picture-choice-tators.jpg',
         value: 'tators',
-        text: 'Funky Kong'
+        text: 'Crunch Tators'
     },
     {
         filename: 'picture-choice-contra.png',
         value: 'contra',
-        text: 'Funky Kong'
+        text: 'Contra Hard Corps on Sega Genesis'
     },
     {
         filename: 'picture-choice-ffix.png',
         value: 'ffix',
-        text: 'Funky Kong'
+        text: 'Vivi fallen down in the street'
     },
     {
         filename: 'picture-choice-nba-jam.jpg',
         value: 'nba',
-        text: 'Funky Kong'
+        text: 'NBA Jam for Game Boy Box Back'
     },
     {
         filename: 'picture-choice-pbcrisps.png',
         value: 'pb',
-        text: 'Funky Kong'
+        text: 'PB Crisps by Planters'
     },
     {
         filename: 'picture-choice-pepsi.jpg',
         value: 'pepsi',
-        text: 'Funky Kong'
+        text: 'Pepsi Cool Cans 1990'
     },
 ]
 
