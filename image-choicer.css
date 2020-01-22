@@ -1,7 +1,36 @@
 body {
     background-color: teal;
+    margin: 3vw;
+    font-family: courier;
+}
+
+#blank-image {
+    visibility: hidden;
 }
 
 img {
-    width: 400px;
+    width: 40vw;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#intro {
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-bottom: 3vw;
+}
+
+#dropdown-zone {
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-bottom: 3vw;
+}
+
+#picture-zone {
+    border: maroon 10px solid;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
 }
