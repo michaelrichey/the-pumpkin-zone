@@ -52,3 +52,13 @@ const ingredients = [
     })
     console.log(ingredients)
   })
+
+  document.querySelector('#button-all-done').addEventListener('click', function() {
+
+    document.querySelectorAll('button, input').forEach(function(elem){
+      elem.disabled = true;
+    });
+    const message = document.createElement("div");
+    message.innerText = "Sit tight your pizza is on the way!";
+    document.querySelector('.box3').appendChild(message);
+  });
