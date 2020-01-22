@@ -7,6 +7,26 @@ const picList = [
         filename: 'picture-choice-tators.jpg',
         id: 'tators'
     },
+    {
+        filename: 'picture-choice-contra.png',
+        id: 'contra'
+    },
+    {
+        filename: 'picture-choice-ffix.png',
+        id: 'ffix'
+    },
+    {
+        filename: 'picture-choice-nba-jam.jpg',
+        id: 'nba'
+    },
+    {
+        filename: 'picture-choice-pbcrisps.png',
+        id: 'pb'
+    },
+    {
+        filename: 'picture-choice-pepsi.jpg',
+        id: 'pepsi'
+    },
 ]
 
 document.querySelector("#dropdown").addEventListener('change', function (e) {
