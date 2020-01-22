@@ -1,7 +1,3 @@
-const test = document.createElement('p')
-test.textContent = 'test'
-document.querySelector("#picture-zone").appendChild(test)
-
 document.querySelector("#dropdown").addEventListener('change', function (e) {
     console.log(e.target.value)
     if (e.target.value === 'funky') {
