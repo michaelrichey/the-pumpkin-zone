@@ -47,15 +47,6 @@ document.querySelector("#dropdown").addEventListener('change', function (e) {
 
 })
 
-// Can this be done with an array somehow? If we want to add 50 pictures, we need 50 if statements. Can we forEach over an array in some way to make this work? But then how can the event listener get the dropdown id? Add dropdown id to array. If e.target.value === object.id, then it adds innerHTML that grabs the img filename from the same spot in the array. Uuuh... how do I do that?
+// Next: can we make a forEach that will loop through the array and create the dropdown? Now I don't have to make 50 if statements, but I still need to go through and make each dropdown with id and all that. Maybe we can autogen that too.
 
-/*
-if (e.target.value === object.id) {
-    document.querySelector("#picture-zone").innerHTML = `<img src="images/${object.img}">`
-} else {
-    console.log('something went wrong')
-}
-
-*/
-
-// But I still need some way for code to grab an image associated with a specific object in the array...
+// Design-wise, let's get some padding and spacing. Arrange elements in divs, spacing around divs. Center the images (maybe in a frame?), get some animated backgrounds.
