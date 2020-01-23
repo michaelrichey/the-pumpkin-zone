@@ -1,5 +1,10 @@
 const picList = [
     {
+        filename: 'picture-choice-contra.png',
+        value: 'blank',
+        text: ''
+    },
+    {
         filename: 'picture-choice-fk.png',
         value: 'funky',
         text: 'Funky Kong'
@@ -54,9 +59,9 @@ document.querySelector("#dropdown").addEventListener('change', function (e) {
 
     let getPic = picList.forEach(function (item) {
         if (e.target.value === item.value) {
-            console.log('if statement ' + item.value)
-            console.log('if statement ' + item.filename)
             document.querySelector("#picture-zone").innerHTML = `<img src="images/${item.filename}">`
+        } else if (e.target.value === 'blank') {
+            document.querySelector("#picture-zone").innerHTML = `<img id="blank-image" src="images/${item.filename}">`
         } else {
             console.log('something went wrong')
         }
@@ -67,7 +72,7 @@ document.querySelector("#dropdown").addEventListener('change', function (e) {
 })
 
 let getPic = picList.forEach(function (item) {
-    if ('contra' === item.value) {
+    if (item.value === 'blank') {
         document.querySelector("#picture-zone").innerHTML = `<img id="blank-image" src="images/${item.filename}">`
     } else {
         console.log('something went wrong')
