@@ -1,7 +1,9 @@
 body {
-    background-color: teal;
+    background-image: url(images/bg-2.gif);
     margin: 3vw;
     font-family: courier;
+    animation: bg-move-2 6s infinite linear;
+    background-position: 10px 800px;
 }
 
 #blank-image {
@@ -28,9 +30,31 @@ img {
 }
 
 #picture-zone {
-    border: maroon 10px solid;
+    border: purple 20px solid;
+    border-style: groove;
     margin-left: 20vw;
     margin-right: 20vw;
     padding-top: 3vw;
     padding-bottom: 3vw;
+    background-image: url(images/bg-1.gif);
+    animation: bg-move-1 6s infinite linear;
+    background-position: 10px 800px;
 }
+
+@keyframes bg-move-1 {
+    0% {
+      background-position: 0px 0px;
+    }
+    100% {
+      background-position: 0px 100px;
+    }
+  }
+
+  @keyframes bg-move-2 {
+    0% {
+      background-position: 0px 0px;
+    }
+    100% {
+      background-position: 100px 0px;
+    }
+  }
