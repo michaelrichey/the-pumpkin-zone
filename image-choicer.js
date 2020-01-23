@@ -76,8 +76,3 @@ let getPic = picList.forEach(function (item) {
 
 getPic(picList)
 
-
-
-// Next: can we make a forEach that will loop through the array and create the dropdown? Now I don't have to make 50 if statements, but I still need to go through and make each dropdown with id and all that. Maybe we can autogen that too.
-
-// Design-wise, let's get some padding and spacing. Arrange elements in divs, spacing around divs. Center the images (maybe in a frame?), get some animated backgrounds.
