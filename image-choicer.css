@@ -29,6 +29,11 @@ img {
     padding-bottom: 3vw;
 }
 
+#dropdown {
+    width: 40vw;
+    height: 4vw;
+}
+
 #picture-zone {
     border: purple 20px solid;
     border-style: groove;

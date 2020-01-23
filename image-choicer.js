@@ -39,6 +39,26 @@ const picList = [
         value: 'pepsi',
         text: 'Pepsi Cool Cans 1990'
     },
+    {
+        filename: 'picture-choice-train.jpg',
+        value: 'train',
+        text: 'An Exquisite Train'
+    },
+    {
+        filename: 'picture-choice-hikonyan.jpg',
+        value: 'hikonyan',
+        text: 'Hikonyan'
+    },
+    {
+        filename: 'picture-choice-taco-bell.jpeg',
+        value: 'tacobell',
+        text: 'Taco Bell Box Flying Through the Desert'
+    },
+    {
+        filename: 'picture-choice-shin-chan.png',
+        value: 'shinchanbento',
+        text: 'Crayon Shin-chan Bento'
+    },
 ]
 
 picList.forEach(function (item) {
@@ -51,8 +71,6 @@ picList.forEach(function (item) {
     document.querySelector("#dropdown").appendChild(generateOptions)
 
 })
-
-
 
 document.querySelector("#dropdown").addEventListener('change', function (e) {
     console.log(e.target.value)
