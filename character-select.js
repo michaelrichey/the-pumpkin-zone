@@ -19,3 +19,23 @@ document.querySelector("#char2").addEventListener("click", function (e) {
     makeImage.src="images/picture-choice-shin-chan.png"
     document.querySelector("#box1").appendChild(makeImage)
 })
+
+document.querySelector("#char3").addEventListener("click", function (e) {
+    document.querySelector("#box1").innerHTML = ''
+
+    console.log(e.target, 'it worked')
+    const makeImage = document.createElement("img")
+    makeImage.classList.add('top-img')
+    makeImage.src="images/picture-choice-fk.png"
+    document.querySelector("#box1").appendChild(makeImage)
+})
+
+document.querySelector("#char4").addEventListener("click", function (e) {
+    document.querySelector("#box1").innerHTML = ''
+
+    console.log(e.target, 'it worked')
+    const makeImage = document.createElement("img")
+    makeImage.classList.add('top-img')
+    makeImage.src="images/picture-choice-pbcrisps.png"
+    document.querySelector("#box1").appendChild(makeImage)
+})

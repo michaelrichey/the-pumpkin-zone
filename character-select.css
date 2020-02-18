@@ -4,28 +4,40 @@ body {
 
 #box1 {
     border: 5px maroon solid;
-    height: 20vw;
+    height: 40vw;
 }
 
 .grid {
     display: grid;
     grid-template-areas:
-        "char1 char2";
+        "char1 char2 char3 char4";
 }
 
 #char1 {
     grid-area: char1;
     border: 5px purple solid;
-    height: 20vw;
+    height: 10vw;
     
 }
 
 #char2 {
     grid-area: char2;
     border: 5px purple solid;
-    height: 20vw;
+    height: 10vw;
+}
+
+#char3 {
+    grid-area: char3;
+    border: 5px purple solid;
+    height: 10vw;
+}
+
+#char4 {
+    grid-area: char4;
+    border: 5px purple solid;
+    height: 10vw;
 }
 
 img {
-    height: 15vw;
+    height: 8vw;
 }
