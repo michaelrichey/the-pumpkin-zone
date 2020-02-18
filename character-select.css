@@ -1,3 +1,31 @@
 body {
     background-color: teal;
 }
+
+#box1 {
+    border: 5px maroon solid;
+    height: 20vw;
+}
+
+.grid {
+    display: grid;
+    grid-template-areas:
+        "char1 char2";
+}
+
+#char1 {
+    grid-area: char1;
+    border: 5px purple solid;
+    height: 20vw;
+    
+}
+
+#char2 {
+    grid-area: char2;
+    border: 5px purple solid;
+    height: 20vw;
+}
+
+img {
+    height: 15vw;
+}
