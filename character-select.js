@@ -1,4 +1,25 @@
-console.log('hello there, butt')
+const charList = [
+    {
+        name: "nba jam",
+        home: '"#char1"',
+        imgfile: '"images/picture-choice-nba-jam.jpg"'
+    },
+    {
+        name: "shin chan",
+        home: '"#char2"',
+        imgfile: '"images/picture-choice-shin-chan.png"'
+    },
+    {
+        name: "funky",
+        home: '"#char3"',
+        imgfile: '"images/picture-choice-fk.png"'
+    },
+        {
+        name: "pb crisps",
+        home: '"#char4"',
+        imgfile: '"images/picture-choice-pbcrisps.png"'
+    }
+]
 
 document.querySelector("#char1").addEventListener("click", function (e) {
     document.querySelector("#box1").innerHTML = ''
