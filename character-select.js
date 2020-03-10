@@ -21,16 +21,16 @@ const charList = [
   }
 ];
 
-document.querySelectorAll(".selecto").forEach(function(item) {
-  item.addEventListener("click", function(e) {
-    charList.forEach(function(gizmo) {
+document.querySelectorAll(".selecto").forEach(function (item) {
+  item.addEventListener("click", function (e) {
+    charList.forEach(function (gizmo) {
       if (gizmo.home === e.target.id) {
-        document.querySelector("#box1").innerHTML = "";
+        document.querySelector("#charview1c").innerHTML = "";
 
         const makeImage = document.createElement("img");
         makeImage.classList.add("top-img");
         makeImage.src = gizmo.imgfile;
-        document.querySelector("#box1").appendChild(makeImage);
+        document.querySelector("#charview1c").appendChild(makeImage);
       }
     });
   });
