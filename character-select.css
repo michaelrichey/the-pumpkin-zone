@@ -15,7 +15,8 @@ body {
     border: 5px orange solid;
     display: grid;
     grid-template-areas:
-    "charview1a charview1b charview1c";
+    "charview1a charview1b"
+    "charview1c charview1c";
 }
 
 #charview2 {
@@ -23,7 +24,11 @@ body {
     border: 5px orange solid;
     display: grid;
     grid-template-areas:
-    "charview2a charview2b charview2c charview2d";
+    "charview2a charview2b"
+    "charview2a charview2c"
+    "charview2d charview2d"
+    "charview2d charview2d"
+    "charview2d charview2d";
 }
 
 #charview1a {
