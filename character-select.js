@@ -23,15 +23,22 @@ const charList = [
 
 document.querySelectorAll(".selecto").forEach(function (item) {
   item.addEventListener("click", function (e) {
-    charList.forEach(function (gizmo) {
-      if (gizmo.home === e.target.id) {
-        document.querySelector("#charview1c").innerHTML = "";
+    makeFullBodyImgAppear(e)
 
-        const makeImage = document.createElement("img");
-        makeImage.classList.add("top-img");
-        makeImage.src = gizmo.imgfile;
-        document.querySelector("#charview1c").appendChild(makeImage);
-      }
-    });
+
   });
 });
+
+const makeFullBodyImgAppear = function (event) {
+  console.log('click worked')
+  charList.forEach(function (gizmo) {
+    if (gizmo.home === event.target.id) {
+      document.querySelector("#charview1c").innerHTML = "";
+
+      const makeImage = document.createElement("img");
+      makeImage.classList.add("top-img");
+      makeImage.src = gizmo.imgfile;
+      document.querySelector("#charview1c").appendChild(makeImage);
+    }
+  });
+}
