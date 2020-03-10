@@ -3,8 +3,62 @@ body {
 }
 
 #box1 {
+    display: grid;
+    grid-template-areas:
+        "charview1 charview2";
     border: 5px maroon solid;
     height: 40vw;
+}
+
+#charview1 {
+    grid-area: charview1;
+    border: 5px orange solid;
+    display: grid;
+    grid-template-areas:
+    "charview1a charview1b charview1c";
+}
+
+#charview2 {
+    grid-area: charview2;
+    border: 5px orange solid;
+    display: grid;
+    grid-template-areas:
+    "charview2a charview2b charview2c charview2d";
+}
+
+#charview1a {
+    grid-area: charview1a;
+    border: 5px green solid;
+}
+
+#charview1b {
+    grid-area: charview1b;
+    border: 5px green solid;
+}
+
+#charview1c {
+    grid-area: charview1c;
+    border: 5px green solid;
+}
+
+#charview2a {
+    grid-area: charview2a;
+    border: 5px green solid;  
+}
+
+#charview2b {
+    grid-area: charview2b;
+    border: 5px green solid;
+}
+
+#charview2c {
+    grid-area: charview2c;
+    border: 5px green solid;
+}
+
+#charview2d {
+    grid-area: charview2d;
+    border: 5px green solid;
 }
 
 .grid {
