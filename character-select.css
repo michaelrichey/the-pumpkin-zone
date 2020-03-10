@@ -17,25 +17,28 @@ body {
     grid-area: char1;
     border: 5px purple solid;
     height: 10vw;
-    
+    background-image: url(images/picture-choice-nba-jam.jpg)
 }
 
 #char2 {
     grid-area: char2;
     border: 5px purple solid;
     height: 10vw;
+    background-image: url(images/picture-choice-shin-chan.png)
 }
 
 #char3 {
     grid-area: char3;
     border: 5px purple solid;
     height: 10vw;
+    background-image: url(images/picture-choice-fk.png)
 }
 
 #char4 {
     grid-area: char4;
     border: 5px purple solid;
     height: 10vw;
+    background-image: url(images/picture-choice-pbcrisps.png)
 }
 
 img {
