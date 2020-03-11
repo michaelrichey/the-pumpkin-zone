@@ -30,6 +30,21 @@ document.querySelectorAll(".selecto").forEach(function (item) {
   });
 });
 
+const makeHeadshotImgAppear = function (event) {
+  charList.forEach(function (gizmo) {
+    if (gizmo.home === event.target.id) {
+      document.querySelector("#charview2a").innerHTML = "";
+
+      const makeImage = document.createElement("img");
+      makeImage.classList.add("top-img");
+      makeImage.src = gizmo.headshot;
+      document.querySelector("#charview2a").appendChild(makeImage);
+    }
+  });
+}
+
+
+
 const makeCharNameAppear = function (event) {
   charList.forEach(function (gizmo) {
     if (gizmo.home === event.target.id) {
