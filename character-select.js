@@ -25,12 +25,25 @@ document.querySelectorAll(".selecto").forEach(function (item) {
   item.addEventListener("click", function (e) {
     makeFullBodyImgAppear(e)
 
+    charList.forEach(function (gizmo) {
+      if (gizmo.home === event.target.id) {
+        document.querySelector("#charview1b").innerHTML = "";
+
+        console.log('click worked')
+        const makeName = document.createElement('p');
+        makeName.classList.add("top-name")
+        makeName.textContent = gizmo.name
+        document.querySelector('#charview1b').appendChild(makeName)
+      }
+    })
+
+
+
 
   });
 });
 
 const makeFullBodyImgAppear = function (event) {
-  console.log('click worked')
   charList.forEach(function (gizmo) {
     if (gizmo.home === event.target.id) {
       document.querySelector("#charview1c").innerHTML = "";
