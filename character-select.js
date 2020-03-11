@@ -2,22 +2,32 @@ const charList = [
   {
     name: "nba jam",
     home: "char1",
-    imgfile: "images/picture-choice-nba-jam.jpg"
+    imgfile: "images/picture-choice-nba-jam.jpg",
+    headshot: "images/picture-choice-nba-jam.jpg",
+    height: "6' 2\"",
+    weight: "235 lbs",
+    power: "asdf",
+    technique: "asdf",
+    speed: "asdf",
+    jump: "asdf",
   },
   {
     name: "shin chan",
     home: "char2",
-    imgfile: "images/picture-choice-shin-chan.png"
+    imgfile: "images/picture-choice-shin-chan.png",
+    headshot: "images/picture-choice-shin-chan.png"
   },
   {
     name: "funky",
     home: "char3",
-    imgfile: "images/picture-choice-fk.png"
+    imgfile: "images/picture-choice-fk.png",
+    headshot: "images/picture-choice-fk.png"
   },
   {
     name: "pb crisps",
     home: "char4",
-    imgfile: "images/picture-choice-pbcrisps.png"
+    imgfile: "images/picture-choice-pbcrisps.png",
+    headshot: "images/picture-choice-pbcrisps.png"
   }
 ];
 
@@ -25,6 +35,7 @@ document.querySelectorAll(".selecto").forEach(function (item) {
   item.addEventListener("click", function (e) {
     makeFullBodyImgAppear(e)
     makeCharNameAppear(e)
+    makeHeadshotImgAppear(e)
 
 
   });
