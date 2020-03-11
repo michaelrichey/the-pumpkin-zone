@@ -24,24 +24,38 @@ const charList = [
 document.querySelectorAll(".selecto").forEach(function (item) {
   item.addEventListener("click", function (e) {
     makeFullBodyImgAppear(e)
-    makeCharNameAppear(e)
+    makeStuffAppear(e, "#charview1b", "p", "top-name", 'name')
+
 
   });
 });
+
+const makeStuffAppear = function (event, idName, elementName, classSelectorName, arrayItem) {
+  charList.forEach(function (gizmo) {
+    if (gizmo.home === event.target.id) {
+      console.log('check')
+      document.querySelector(idName).innerHTML = "";
+
+      const makeName = document.createElement(elementName);
+      makeName.classList.add(classSelectorName)
+      makeName.textContent = gizmo.arrayItem
+      document.querySelector(idName).appendChild(makeName)
+    }
+  })
+
+}
 
 const makeCharNameAppear = function (event) {
   charList.forEach(function (gizmo) {
     if (gizmo.home === event.target.id) {
       document.querySelector("#charview1b").innerHTML = "";
 
-      console.log('click worked')
       const makeName = document.createElement('p');
       makeName.classList.add("top-name")
       makeName.textContent = gizmo.name
       document.querySelector('#charview1b').appendChild(makeName)
     }
   })
-
 }
 
 const makeFullBodyImgAppear = function (event) {
