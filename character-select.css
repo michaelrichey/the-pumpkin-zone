@@ -103,3 +103,7 @@ body {
 img {
     height: 8vw;
 }
+
+.wacky {
+    background-color: purple;
+}
