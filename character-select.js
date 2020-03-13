@@ -6,10 +6,10 @@ const charList = [
     headshot: "images/picture-choice-nba-jam.jpg",
     height: "6' 2\"",
     weight: "235 lbs",
-    power: "asdf",
-    technique: "asdf",
-    speed: "asdf",
-    jump: "asdf",
+    power: "❚❚❚❚❚❚❚❚",
+    technique: "❚❚",
+    speed: "❚❚❚",
+    jump: "❚❚❚❚",
   },
   {
     name: "shin chan",
@@ -17,7 +17,11 @@ const charList = [
     imgfile: "images/picture-choice-shin-chan.png",
     headshot: "images/picture-choice-shin-chan.png",
     height: "5' 2\"",
-    weight: "199 lbs"
+    weight: "199 lbs",
+    power: "❚❚❚",
+    technique: "❚❚❚❚❚",
+    speed: "❚❚❚❚",
+    jump: "❚❚❚",
   },
   {
     name: "funky",
@@ -25,7 +29,11 @@ const charList = [
     imgfile: "images/picture-choice-fk.png",
     headshot: "images/picture-choice-fk.png",
     height: "4' 9\"",
-    weight: "167 lbs"
+    weight: "167 lbs",
+    power: "❚❚❚❚",
+    technique: "❚❚❚❚",
+    speed: "❚❚❚❚",
+    jump: "❚❚❚❚",
   },
   {
     name: "pb crisps",
@@ -33,7 +41,11 @@ const charList = [
     imgfile: "images/picture-choice-pbcrisps.png",
     headshot: "images/picture-choice-pbcrisps.png",
     height: "5' 9\"",
-    weight: "187 lbs"
+    weight: "187 lbs",
+    power: "❚❚",
+    technique: "❚❚❚❚❚❚❚❚❚",
+    speed: "❚❚❚❚❚❚❚",
+    jump: "❚❚❚❚",
   }
 ];
 
@@ -43,10 +55,30 @@ document.querySelectorAll(".selecto").forEach(function (item) {
     makeCharNameAppear(e)
     makeHeadshotImgAppear(e)
     makeHeightWeight(e)
+    makeStatsBars(e)
 
 
   });
 });
+
+const makeStatsBars = function (event) {
+  charList.forEach(function (gizmo) {
+    if (gizmo.home === event.target.id) {
+      document.querySelector("#charview2d").innerHTML = "";
+      makeBars("Power", gizmo.power)
+      makeBars("Technique", gizmo.technique)
+      makeBars("Speed", gizmo.speed)
+      makeBars("Jump", gizmo.jump)
+    }
+  })
+}
+
+const makeBars = function (category, item) {
+  const make = document.createElement('p')
+  make.textContent = category + ": " + item
+  document.querySelector('#charview2d').appendChild(make)
+}
+
 
 
 const makeHeightWeight = function (event) {
