@@ -105,5 +105,6 @@ img {
 }
 
 .wacky {
-    background-color: purple;
+    background-image: url(images/wacky.jpg);
+    background-size: 300px;
 }

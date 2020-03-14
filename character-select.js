@@ -136,13 +136,11 @@ const makeFullBodyImgAppear = function (event) {
 }
 
 document.querySelector("#wacky-button").addEventListener('click', function (e) {
-  document.querySelector("#wacky-button").value = "on"
-  console.log(e)
   if (e.target.value === "on") {
-    console.log('it worked')
     document.querySelector("body").classList.add("wacky")
+    document.querySelector("#wacky-button").value = "off"
   } else {
-    console.log('work on this later, its not working')
+    document.querySelector("#wacky-button").value = "on"
+    document.querySelector("body").classList.remove("wacky")
   }
-
 })
