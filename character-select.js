@@ -10,6 +10,7 @@ const charList = [
     technique: "❚❚",
     speed: "❚❚❚",
     jump: "❚❚❚❚",
+    bio: "Born in the Outback and raised by koalas, this communications expert knows how to infiltrate enemy systems and escape undetected."
   },
   {
     name: "shin chan",
@@ -22,6 +23,7 @@ const charList = [
     technique: "❚❚❚❚❚",
     speed: "❚❚❚❚",
     jump: "❚❚❚",
+    bio: "Found in a box next to a convent, this schoolteacher-by-day uses her protractor to stab villains in the eyes."
   },
   {
     name: "funky",
@@ -34,6 +36,7 @@ const charList = [
     technique: "❚❚❚❚",
     speed: "❚❚❚❚",
     jump: "❚❚❚❚",
+    bio: "Raised on the mean streets of Cyber City X, this half-dog-half-robot has his keen animal senses heightened by algorithms stolen directly from Amazon."
   },
   {
     name: "pb crisps",
@@ -46,6 +49,7 @@ const charList = [
     technique: "❚❚❚❚❚❚❚❚❚",
     speed: "❚❚❚❚❚❚❚",
     jump: "❚❚❚❚",
+    bio: "Emerging from an Insectinoid egg-pod that was separated from the nest, this genetically-engineered alien soldier uses his innate skills as a field medic to heal the children of earth... and stab villains in the eyes with a protractor."
   }
 ];
 
@@ -56,6 +60,7 @@ document.querySelectorAll(".selecto").forEach(function (item) {
     makeHeadshotImgAppear(e)
     makeHeightWeight(e)
     makeStatsBars(e)
+    makeBioAppear(e)
 
 
   });
@@ -133,6 +138,19 @@ const makeFullBodyImgAppear = function (event) {
       document.querySelector("#charview1c").appendChild(makeImage);
     }
   });
+}
+
+const makeBioAppear = function (event) {
+  charList.forEach(function (gizmo) {
+    if (gizmo.home === event.target.id) {
+      document.querySelector("#charview2c").innerHTML = ""
+
+      const makeBio = document.createElement('p')
+      makeBio.classList.add('top-bio')
+      makeBio.textContent = gizmo.bio
+      document.querySelector("#charview2c").appendChild(makeBio)
+    }
+  })
 }
 
 document.querySelector("#wacky-button").addEventListener('click', function (e) {
