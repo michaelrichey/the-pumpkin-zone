@@ -6,7 +6,6 @@ body {
   display: grid;
   grid-template-areas: "charview1 charview2";
   border: 5px maroon solid;
-  height: 40vw;
 }
 
 #charview1 {
