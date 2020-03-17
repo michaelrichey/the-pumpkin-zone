@@ -162,3 +162,12 @@ document.querySelector("#wacky-button").addEventListener('click', function (e) {
     document.querySelector("body").classList.remove("wacky")
   }
 })
+
+// function not used. cant make it work. find a way to make it work later.
+const selectFromArray = function (event, code) {
+  charList.forEach(function (gizmo) {
+    if (gizmo.home === event.target.id) {
+      code
+    }
+  })
+}
