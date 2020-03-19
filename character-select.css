@@ -4,11 +4,16 @@ body {
 
 #box1 {
   display: grid;
-  grid-template-areas: "charview1 charview2";
+  grid-template-areas:
+    "charview1 charview2"
+    "chargrid chargrid";
   border: 5px maroon solid;
+  height: 40vw;
 }
 
 #charview1 {
+  height: 39vw;
+  width: 47vw;
   grid-area: charview1;
   border: 5px orange solid;
   display: grid;
@@ -18,6 +23,8 @@ body {
 }
 
 #charview2 {
+  height: 39vw;
+  width: 47vw;
   grid-area: charview2;
   border: 5px orange solid;
   display: grid;
@@ -57,6 +64,7 @@ body {
 #charview2c {
   grid-area: charview2c;
   border: 5px green solid;
+  font-size: 1.5vw;
 }
 
 #charview2d {
@@ -64,7 +72,8 @@ body {
   border: 5px green solid;
 }
 
-.grid {
+.chargrid {
+  grid-area: chargrid;
   display: grid;
   grid-template-areas: "char1 char2 char3 char4";
 }
@@ -73,28 +82,40 @@ body {
   grid-area: char1;
   border: 5px purple solid;
   height: 10vw;
-  background-image: url(images/picture-choice-nba-jam.jpg);
+  background-image: url(images/crono.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 9vw;
 }
 
 #char2 {
   grid-area: char2;
   border: 5px purple solid;
   height: 10vw;
-  background-image: url(images/picture-choice-shin-chan.png);
+  background-image: url(images/crono.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 9vw;
 }
 
 #char3 {
   grid-area: char3;
   border: 5px purple solid;
   height: 10vw;
-  background-image: url(images/picture-choice-fk.png);
+  background-image: url(images/crono.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 9vw;
 }
 
 #char4 {
   grid-area: char4;
   border: 5px purple solid;
   height: 10vw;
-  background-image: url(images/picture-choice-pbcrisps.png);
+  background-image: url(images/crono.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 9vw;
 }
 
 img {
@@ -104,4 +125,14 @@ img {
 .wacky {
   background-image: url(images/wacky.jpg);
   background-size: 300px;
+}
+
+@media only all and (max-width: 900px) {
+  body {
+    background-color: purple;
+  }
+
+  #box1 {
+    height: 45em;
+  }
 }
