@@ -8,11 +8,11 @@ body {
     "charview1 charview2"
     "chargrid chargrid";
   border: 5px maroon solid;
-  height: 40vw;
+  height: 50em;
 }
 
 #charview1 {
-  height: 39vw;
+  height: 35em;
   width: 47vw;
   grid-area: charview1;
   border: 5px orange solid;
@@ -23,7 +23,7 @@ body {
 }
 
 #charview2 {
-  height: 39vw;
+  height: 35em;
   width: 47vw;
   grid-area: charview2;
   border: 5px orange solid;
@@ -129,10 +129,20 @@ img {
 
 @media only all and (max-width: 900px) {
   body {
-    background-color: purple;
+    background-color: skyblue;
   }
 
   #box1 {
-    height: 45em;
+    height: 50em;
+  }
+
+  #charview1 {
+    height: 43em;
+    width: 45vw;
+  }
+
+  #charview2 {
+    height: 43em;
+    width: 45vw;
   }
 }
