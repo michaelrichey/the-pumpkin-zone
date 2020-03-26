@@ -2,8 +2,8 @@ const charList = [
   {
     name: "nba jam",
     home: "char1",
-    imgfile: "images/picture-choice-nba-jam.jpg",
-    headshot: "images/picture-choice-nba-jam.jpg",
+    imgfile: "images/skeleton.gif",
+    headshot: "images/crono.png",
     height: "6' 2\"",
     weight: "235 lbs",
     power: "❚❚❚❚❚❚❚❚",
@@ -16,8 +16,8 @@ const charList = [
   {
     name: "shin chan",
     home: "char2",
-    imgfile: "images/picture-choice-shin-chan.png",
-    headshot: "images/picture-choice-shin-chan.png",
+    imgfile: "images/werewolf.gif",
+    headshot: "images/crono.png",
     height: "5' 2\"",
     weight: "199 lbs",
     power: "❚❚❚",
@@ -30,8 +30,8 @@ const charList = [
   {
     name: "funky",
     home: "char3",
-    imgfile: "images/picture-choice-fk.png",
-    headshot: "images/picture-choice-fk.png",
+    imgfile: "images/vampire.gif",
+    headshot: "images/crono.png",
     height: "4' 9\"",
     weight: "167 lbs",
     power: "❚❚❚❚",
@@ -44,8 +44,8 @@ const charList = [
   {
     name: "pb crisps",
     home: "char4",
-    imgfile: "images/picture-choice-pbcrisps.png",
-    headshot: "images/picture-choice-pbcrisps.png",
+    imgfile: "images/alien.gif",
+    headshot: "images/crono.png",
     height: "5' 9\"",
     weight: "187 lbs",
     power: "❚❚",
@@ -57,8 +57,8 @@ const charList = [
   }
 ];
 
-document.querySelectorAll(".selecto").forEach(function(item) {
-  item.addEventListener("click", function(e) {
+document.querySelectorAll(".selecto").forEach(function (item) {
+  item.addEventListener("click", function (e) {
     makeFullBodyImgAppear(e);
     makeCharNameAppear(e);
     makeHeadshotImgAppear(e);
@@ -68,8 +68,8 @@ document.querySelectorAll(".selecto").forEach(function(item) {
   });
 });
 
-const makeStatsBars = function(event) {
-  charList.forEach(function(gizmo) {
+const makeStatsBars = function (event) {
+  charList.forEach(function (gizmo) {
     if (gizmo.home === event.target.id) {
       document.querySelector("#charview2d").innerHTML = "";
       makeBars("Power", gizmo.power);
@@ -80,14 +80,14 @@ const makeStatsBars = function(event) {
   });
 };
 
-const makeBars = function(category, item) {
+const makeBars = function (category, item) {
   const make = document.createElement("p");
   make.textContent = category + ": " + item;
   document.querySelector("#charview2d").appendChild(make);
 };
 
-const makeHeightWeight = function(event) {
-  charList.forEach(function(gizmo) {
+const makeHeightWeight = function (event) {
+  charList.forEach(function (gizmo) {
     if (gizmo.home === event.target.id) {
       document.querySelector("ul").innerHTML = "";
 
@@ -101,8 +101,8 @@ const makeHeightWeight = function(event) {
   });
 };
 
-const makeHeadshotImgAppear = function(event) {
-  charList.forEach(function(gizmo) {
+const makeHeadshotImgAppear = function (event) {
+  charList.forEach(function (gizmo) {
     if (gizmo.home === event.target.id) {
       document.querySelector("#charview2a").innerHTML = "";
 
@@ -114,8 +114,8 @@ const makeHeadshotImgAppear = function(event) {
   });
 };
 
-const makeCharNameAppear = function(event) {
-  charList.forEach(function(gizmo) {
+const makeCharNameAppear = function (event) {
+  charList.forEach(function (gizmo) {
     if (gizmo.home === event.target.id) {
       document.querySelector("#charview1b").innerHTML = "";
 
@@ -127,21 +127,21 @@ const makeCharNameAppear = function(event) {
   });
 };
 
-const makeFullBodyImgAppear = function(event) {
-  charList.forEach(function(gizmo) {
+const makeFullBodyImgAppear = function (event) {
+  charList.forEach(function (gizmo) {
     if (gizmo.home === event.target.id) {
       document.querySelector("#charview1c").innerHTML = "";
 
       const makeImage = document.createElement("img");
-      makeImage.classList.add("top-img");
+      makeImage.classList.add("char-img");
       makeImage.src = gizmo.imgfile;
       document.querySelector("#charview1c").appendChild(makeImage);
     }
   });
 };
 
-const makeBioAppear = function(event) {
-  charList.forEach(function(gizmo) {
+const makeBioAppear = function (event) {
+  charList.forEach(function (gizmo) {
     if (gizmo.home === event.target.id) {
       document.querySelector("#charview2c").innerHTML = "";
 
@@ -153,7 +153,7 @@ const makeBioAppear = function(event) {
   });
 };
 
-document.querySelector("#wacky-button").addEventListener("click", function(e) {
+document.querySelector("#wacky-button").addEventListener("click", function (e) {
   if (e.target.value === "on") {
     document.querySelector("body").classList.add("wacky");
     document.querySelector("#wacky-button").value = "off";
@@ -164,8 +164,8 @@ document.querySelector("#wacky-button").addEventListener("click", function(e) {
 });
 
 // function not used. cant make it work. find a way to make it work later.
-const selectFromArray = function(event, code) {
-  charList.forEach(function(gizmo) {
+const selectFromArray = function (event, code) {
+  charList.forEach(function (gizmo) {
     if (gizmo.home === event.target.id) {
       code;
     }

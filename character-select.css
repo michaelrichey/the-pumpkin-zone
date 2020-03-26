@@ -39,16 +39,19 @@ body {
 #charview1a {
   grid-area: charview1a;
   border: 5px green solid;
+  font-size: 3vw;
 }
 
 #charview1b {
   grid-area: charview1b;
   border: 5px green solid;
+  font-size: 3vw;
 }
 
 #charview1c {
   grid-area: charview1c;
   border: 5px green solid;
+  height: 24vw;
 }
 
 #charview2a {
@@ -127,22 +130,59 @@ img {
   background-size: 300px;
 }
 
+.char-img {
+  height: 20vw;
+  padding-top: 2rem;
+}
+
+.top-img {
+  height: 20vw;
+}
+
 @media only all and (max-width: 900px) {
   body {
     background-color: skyblue;
   }
 
   #box1 {
-    height: 50em;
+    height: 60em;
+    grid-template-areas:
+    "charview1" 
+    "charview2"
+    "chargrid";
   }
 
   #charview1 {
     height: 43em;
-    width: 45vw;
+    width: 100%;
   }
 
   #charview2 {
     height: 43em;
-    width: 45vw;
+    width: 100%;
+    grid-template-areas:
+    "charview2a charview2b"
+    "charview2c charview2c"
+    "charview2d charview2d"
+    "charview2d charview2d"
+    "charview2d charview2d";
+  }
+
+  .chargrid {
+    grid-template-areas: 
+    "char1 char2"
+    "char3 char4";
+  }
+
+  #charview2c {
+    font-size: 4.5vw;
+  }
+
+  .char-img {
+    height: 60vw;
+  }
+
+  #charview1c {
+    height: 70vw;
   }
 }
