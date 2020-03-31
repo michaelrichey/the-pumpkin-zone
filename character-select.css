@@ -1,5 +1,5 @@
 body {
-  background-color: teal;
+  background-color: lightgray;
 }
 
 #box1 {
@@ -9,11 +9,11 @@ body {
     "charview2"
     "chargrid";
   border: 5px maroon solid;
-  height: 50em;
+  height: 100em;
 }
 
 #charview1 {
-  height: 43em;
+  height: 35em;
   width: 100%;
   grid-area: charview1;
   border: 5px orange solid;
@@ -21,10 +21,11 @@ body {
   grid-template-areas:
     "charview1a charview1b"
     "charview1c charview1c";
+  align-items: center;
 }
 
 #charview2 {
-  height: 35em;
+  height: 30em;
   width: 47vw;
   height: 43em;
   width: 100%;
@@ -43,34 +44,39 @@ body {
   grid-area: charview1a;
   border: 5px green solid;
   font-size: 3vw;
+  height: 11vw;
 }
 
 #charview1b {
   grid-area: charview1b;
   border: 5px green solid;
   font-size: 3vw;
+  height: 11vw;
 }
 
 #charview1c {
   grid-area: charview1c;
   border: 5px green solid;
-  height: 70vw;
+  height: 50vw;
 }
 
 #charview2a {
   grid-area: charview2a;
   border: 5px green solid;
+  height: 20vw;
 }
 
 #charview2b {
   grid-area: charview2b;
   border: 5px green solid;
+  height: 20vw;
 }
 
 #charview2c {
   grid-area: charview2c;
   border: 5px green solid;
   font-size: 4.5vw;
+  height: 40vw;
 }
 
 #charview2d {
@@ -89,7 +95,7 @@ body {
 #char1 {
   grid-area: char1;
   border: 5px purple solid;
-  height: 10vw;
+  height: 30vw;
   background-image: url(images/crono.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -99,7 +105,7 @@ body {
 #char2 {
   grid-area: char2;
   border: 5px purple solid;
-  height: 10vw;
+  height: 30vw;
   background-image: url(images/crono.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -109,7 +115,7 @@ body {
 #char3 {
   grid-area: char3;
   border: 5px purple solid;
-  height: 10vw;
+  height: 30vw;
   background-image: url(images/crono.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -119,7 +125,7 @@ body {
 #char4 {
   grid-area: char4;
   border: 5px purple solid;
-  height: 10vw;
+  height: 30vw;
   background-image: url(images/crono.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -137,7 +143,7 @@ img {
 
 .char-img {
   padding-top: 2rem;
-  height: 60vw;
+  height: 45vw;
 }
 
 .top-img {
@@ -157,18 +163,16 @@ img {
   }
 
   #charview1 {
-    height: 35em;
+    height: 40em;
     width: 47vw;
   }
 
   #charview2 {
-    height: 35em;
+    height: 40em;
     width: 47vw;
     grid-template-areas:
     "charview2a charview2b"
-    "charview2a charview2c"
-    "charview2d charview2d"
-    "charview2d charview2d"
+    "charview2c charview2c"
     "charview2d charview2d";
   }
 
@@ -177,8 +181,21 @@ img {
     "char1 char2 char3 char4";
   }
 
+  #charview2a {
+    height: 15vw;
+  }
+
+  #charview2b {
+    height: 10vw;
+  }
+
   #charview2c {
     font-size: 1.5vw;
+    height: 10vw;
+  }
+
+  .top-img {
+    height: 15vw;
   }
 
   .char-img {
@@ -187,5 +204,21 @@ img {
 
   #charview1c {
     height: 24vw;
+  }
+
+  #char1 {
+    height: 10vw;
+  }
+
+  #char2 {
+    height: 10vw;
+  }
+
+  #char3 {
+    height: 10vw;
+  }
+
+  #char4 {
+    height: 10vw;
   }
 }
