@@ -5,15 +5,16 @@ body {
 #box1 {
   display: grid;
   grid-template-areas:
-    "charview1 charview2"
-    "chargrid chargrid";
+    "charview1" 
+    "charview2"
+    "chargrid";
   border: 5px maroon solid;
   height: 50em;
 }
 
 #charview1 {
-  height: 35em;
-  width: 47vw;
+  height: 43em;
+  width: 100%;
   grid-area: charview1;
   border: 5px orange solid;
   display: grid;
@@ -25,12 +26,14 @@ body {
 #charview2 {
   height: 35em;
   width: 47vw;
+  height: 43em;
+  width: 100%;
   grid-area: charview2;
   border: 5px orange solid;
   display: grid;
   grid-template-areas:
     "charview2a charview2b"
-    "charview2a charview2c"
+    "charview2c charview2c"
     "charview2d charview2d"
     "charview2d charview2d"
     "charview2d charview2d";
@@ -51,7 +54,7 @@ body {
 #charview1c {
   grid-area: charview1c;
   border: 5px green solid;
-  height: 24vw;
+  height: 70vw;
 }
 
 #charview2a {
@@ -67,7 +70,7 @@ body {
 #charview2c {
   grid-area: charview2c;
   border: 5px green solid;
-  font-size: 1.5vw;
+  font-size: 4.5vw;
 }
 
 #charview2d {
@@ -78,7 +81,9 @@ body {
 .chargrid {
   grid-area: chargrid;
   display: grid;
-  grid-template-areas: "char1 char2 char3 char4";
+  grid-template-areas:
+  "char1 char2"
+  "char3 char4";
 }
 
 #char1 {
@@ -131,15 +136,15 @@ img {
 }
 
 .char-img {
-  height: 20vw;
   padding-top: 2rem;
+  height: 60vw;
 }
 
 .top-img {
   height: 20vw;
 }
 
-@media only all and (max-width: 900px) {
+@media only all and (min-width: 900px) {
   body {
     background-color: skyblue;
   }
@@ -147,22 +152,21 @@ img {
   #box1 {
     height: 60em;
     grid-template-areas:
-    "charview1" 
-    "charview2"
-    "chargrid";
+    "charview1 charview2"
+    "chargrid chargrid";
   }
 
   #charview1 {
-    height: 43em;
-    width: 100%;
+    height: 35em;
+    width: 47vw;
   }
 
   #charview2 {
-    height: 43em;
-    width: 100%;
+    height: 35em;
+    width: 47vw;
     grid-template-areas:
     "charview2a charview2b"
-    "charview2c charview2c"
+    "charview2a charview2c"
     "charview2d charview2d"
     "charview2d charview2d"
     "charview2d charview2d";
@@ -170,19 +174,18 @@ img {
 
   .chargrid {
     grid-template-areas: 
-    "char1 char2"
-    "char3 char4";
+    "char1 char2 char3 char4";
   }
 
   #charview2c {
-    font-size: 4.5vw;
+    font-size: 1.5vw;
   }
 
   .char-img {
-    height: 60vw;
+    height: 20vw;
   }
 
   #charview1c {
-    height: 70vw;
+    height: 24vw;
   }
 }
