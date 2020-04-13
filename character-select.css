@@ -9,12 +9,9 @@ body {
     "charview1" 
     "charview2";
   border: 5px maroon solid;
-  height: auto;
 }
 
 #charview1 {
-  height: auto;
-  width: auto;
   grid-area: charview1;
   border: 5px orange solid;
   display: flex;
@@ -22,8 +19,6 @@ body {
 }
 
 #charview2 {
-  height: auto;
-  width: auto;
   grid-area: charview2;
   border: 5px orange solid;
   display: flex;
@@ -152,7 +147,6 @@ img {
   }
 
   #box1 {
-    height: 53em;
     grid-template-areas:
     "chargrid chargrid"
     "charview1 charview2";
