@@ -14,69 +14,60 @@ body {
 
 #charview1 {
   height: 35em;
-  width: 100%;
+  width: auto%;
   grid-area: charview1;
   border: 5px orange solid;
   display: grid;
   grid-template-areas:
-    "charview1a charview1b"
-    "charview1c charview1c";
+    "charview1b"
+    "charview1c";
 }
 
 #charview2 {
-  height: 30em;
-  width: 47vw;
   height: 43em;
-  width: 100%;
+  width: auto;
   grid-area: charview2;
   border: 5px orange solid;
-  display: grid;
-  grid-template-areas:
-    "charview2a charview2b"
-    "charview2c charview2c"
-    "charview2d charview2d"
-    "charview2d charview2d"
-    "charview2d charview2d";
-}
-
-#charview1a {
-  grid-area: charview1a;
-  border: 5px green solid;
-  font-size: 3vw;
-  height: 11vw;
 }
 
 #charview1b {
   grid-area: charview1b;
   border: 5px green solid;
   font-size: 3vw;
-  height: 11vw;
-  width: 60vw;
+  height: auto;
+  width: auto;
 }
 
 #charview1c {
   grid-area: charview1c;
   border: 5px green solid;
-  height: 50vw;
+  height: auto;
+}
+
+#charview2holder {
+  grid-area: charview2holder;
+  display: grid;
+  grid-template-areas:
+  "charview2a charview2b";
 }
 
 #charview2a {
   grid-area: charview2a;
   border: 5px green solid;
-  height: 20vw;
+  height: auto;
 }
 
 #charview2b {
   grid-area: charview2b;
   border: 5px green solid;
-  height: 20vw;
+  height: auto;
 }
 
 #charview2c {
   grid-area: charview2c;
   border: 5px green solid;
   font-size: 4.5vw;
-  height: 40vw;
+  height: auto;
 }
 
 #charview2d {
@@ -163,7 +154,7 @@ img {
   }
 
   #charview1b {
-    width: 30vw;
+    width: auto;
   }
 
   #charview1 {
@@ -174,10 +165,6 @@ img {
   #charview2 {
     height: 40em;
     width: 47vw;
-    grid-template-areas:
-    "charview2a charview2b"
-    "charview2c charview2c"
-    "charview2d charview2d";
   }
 
   .chargrid {
@@ -186,16 +173,16 @@ img {
   }
 
   #charview2a {
-    height: 15vw;
+    height: auto;
   }
 
   #charview2b {
-    height: 10vw;
+    height: auto;
   }
 
   #charview2c {
     font-size: 1.8rem;
-    height: 14rem;
+    height: auto;
   }
 
   .top-img {
@@ -207,7 +194,7 @@ img {
   }
 
   #charview1c {
-    height: 24vw;
+    height: auto;
   }
 
   #char1 {
