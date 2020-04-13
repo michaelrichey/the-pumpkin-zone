@@ -9,25 +9,25 @@ body {
     "charview1" 
     "charview2";
   border: 5px maroon solid;
-  height: 120em;
+  height: auto;
 }
 
 #charview1 {
-  height: 35em;
-  width: auto%;
+  height: auto;
+  width: auto;
   grid-area: charview1;
   border: 5px orange solid;
-  display: grid;
-  grid-template-areas:
-    "charview1b"
-    "charview1c";
+  display: flex;
+  flex-direction: column;
 }
 
 #charview2 {
-  height: 43em;
+  height: auto;
   width: auto;
   grid-area: charview2;
   border: 5px orange solid;
+  display: flex;
+  flex-direction: column;
 }
 
 #charview1b {
@@ -36,12 +36,14 @@ body {
   font-size: 3vw;
   height: auto;
   width: auto;
+  flex-grow: 1;
 }
 
 #charview1c {
   grid-area: charview1c;
   border: 5px green solid;
   height: auto;
+  flex-grow: 4;
 }
 
 #charview2holder {
@@ -49,6 +51,7 @@ body {
   display: grid;
   grid-template-areas:
   "charview2a charview2b";
+  flex-grow: 1;
 }
 
 #charview2a {
@@ -68,11 +71,13 @@ body {
   border: 5px green solid;
   font-size: 4.5vw;
   height: auto;
+  flex-grow: 2;
 }
 
 #charview2d {
   grid-area: charview2d;
   border: 5px green solid;
+  flex-grow: 2;
 }
 
 .chargrid {
@@ -90,7 +95,7 @@ body {
   background-image: url(images/crono.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 9vw;
+  background-size: 20vw;
 }
 
 #char2 {
@@ -100,7 +105,7 @@ body {
   background-image: url(images/crono.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 9vw;
+  background-size: 20vw;
 }
 
 #char3 {
@@ -110,7 +115,7 @@ body {
   background-image: url(images/crono.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 9vw;
+  background-size: 20vw;
 }
 
 #char4 {
@@ -120,7 +125,7 @@ body {
   background-image: url(images/crono.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 9vw;
+  background-size: 20vw;
 }
 
 img {
@@ -199,17 +204,21 @@ img {
 
   #char1 {
     height: 10vw;
+    background-size: 9vw;
   }
 
   #char2 {
     height: 10vw;
+    background-size: 9vw;
   }
 
   #char3 {
     height: 10vw;
+    background-size: 9vw;
   }
 
   #char4 {
     height: 10vw;
+    background-size: 9vw;
   }
 }
