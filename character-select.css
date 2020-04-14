@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Stalinist+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Iceberg&display=swap');
+
 body {
   background-color: lightgray;
+  font-family: 'Iceberg', cursive;
 }
 
 #box1 {
@@ -32,6 +36,7 @@ body {
   height: auto;
   width: auto;
   flex-grow: 1;
+  padding-left: 3rem;
 }
 
 #charview1c {
@@ -39,6 +44,7 @@ body {
   border: 5px green solid;
   height: auto;
   flex-grow: 4;
+  padding-left: 3rem;
 }
 
 #charview2holder {
@@ -47,6 +53,14 @@ body {
   grid-template-areas:
   "charview2a charview2b";
   flex-grow: 1;
+}
+
+#charview2holder2 {
+  grid-area: charview2holder2;
+  display: grid;
+  grid-template-areas:
+  "charview2c charview2d";
+  flex-grow: 3;
 }
 
 #charview2a {
@@ -59,6 +73,7 @@ body {
   grid-area: charview2b;
   border: 5px green solid;
   height: auto;
+  font-size: 2vw;
 }
 
 #charview2c {
@@ -66,13 +81,16 @@ body {
   border: 5px green solid;
   font-size: 4.5vw;
   height: auto;
-  flex-grow: 2;
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 
 #charview2d {
   grid-area: charview2d;
   border: 5px green solid;
-  flex-grow: 2;
+  font-size: 2vw;
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 
 .chargrid {
@@ -87,7 +105,7 @@ body {
   grid-area: char1;
   border: 5px purple solid;
   height: 20vw;
-  background-image: url(images/crono.png);
+  background-image: url(images/pp-bot.gif);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 20vw;
@@ -97,7 +115,7 @@ body {
   grid-area: char2;
   border: 5px purple solid;
   height: 20vw;
-  background-image: url(images/crono.png);
+  background-image: url(images/pp-wolf.gif);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 20vw;
@@ -107,7 +125,7 @@ body {
   grid-area: char3;
   border: 5px purple solid;
   height: 20vw;
-  background-image: url(images/crono.png);
+  background-image: url(images/pp-drac.gif);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 20vw;
@@ -117,7 +135,7 @@ body {
   grid-area: char4;
   border: 5px purple solid;
   height: 20vw;
-  background-image: url(images/crono.png);
+  background-image: url(images/pp-alien.gif);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 20vw;
@@ -139,6 +157,9 @@ img {
 
 .top-img {
   height: 20vw;
+  margin-left: auto;
+  margin-right: auto;
+  display: block
 }
 
 @media only all and (min-width: 900px) {
@@ -158,12 +179,12 @@ img {
 
   #charview1 {
     height: 40em;
-    width: 47vw;
+    width: 33vw;
   }
 
   #charview2 {
     height: 40em;
-    width: 47vw;
+    width: 60vw;
   }
 
   .chargrid {
@@ -185,11 +206,11 @@ img {
   }
 
   .top-img {
-    height: 15vw;
+    height: 11vw;
   }
 
   .char-img {
-    height: 20vw;
+    height: 25vw;
   }
 
   #charview1c {

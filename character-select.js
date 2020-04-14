@@ -1,9 +1,9 @@
 const charList = [
   {
-    name: "nba jam",
+    name: "Party Bot 5000",
     home: "char1",
-    imgfile: "images/skeleton.gif",
-    headshot: "images/crono.png",
+    imgfile: "images/robo.gif",
+    headshot: "images/pp-bot.gif",
     height: "6' 2\"",
     weight: "235 lbs",
     power: "❚❚❚❚❚❚❚❚",
@@ -14,10 +14,10 @@ const charList = [
       "Born in the Outback and raised by koalas, this communications expert knows how to infiltrate enemy systems and escape undetected."
   },
   {
-    name: "shin chan",
+    name: "Dog Walker",
     home: "char2",
     imgfile: "images/werewolf.gif",
-    headshot: "images/crono.png",
+    headshot: "images/pp-wolf.gif",
     height: "5' 2\"",
     weight: "199 lbs",
     power: "❚❚❚",
@@ -28,10 +28,10 @@ const charList = [
       "Found in a box next to a convent, this schoolteacher-by-day uses her protractor to stab villains in the eyes."
   },
   {
-    name: "funky",
+    name: "Count GrapeFang",
     home: "char3",
     imgfile: "images/vampire.gif",
-    headshot: "images/crono.png",
+    headshot: "images/pp-drac.gif",
     height: "4' 9\"",
     weight: "167 lbs",
     power: "❚❚❚❚",
@@ -42,10 +42,10 @@ const charList = [
       "Raised on the mean streets of Cyber City X, this half-dog-half-robot has his keen animal senses heightened by algorithms stolen directly from Amazon."
   },
   {
-    name: "pb crisps",
+    name: "Karate Alien",
     home: "char4",
     imgfile: "images/alien.gif",
-    headshot: "images/crono.png",
+    headshot: "images/pp-alien.gif",
     height: "5' 9\"",
     weight: "187 lbs",
     power: "❚❚",
