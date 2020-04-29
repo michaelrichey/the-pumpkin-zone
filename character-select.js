@@ -11,7 +11,7 @@ const charList = [
     speed: "❚❚❚",
     jump: "❚❚❚❚",
     bio:
-      "Born in the Outback and raised by koalas, this communications expert knows how to infiltrate enemy systems and escape undetected."
+      "Designed in the Outback by party scientists, this robot was designed to dispense mirthmaking at maximum efficiency."
   },
   {
     name: "Dog Walker",
@@ -25,7 +25,7 @@ const charList = [
     speed: "❚❚❚❚",
     jump: "❚❚❚",
     bio:
-      "Found in a box next to a convent, this schoolteacher-by-day uses her protractor to stab villains in the eyes."
+      "Found in a box next to a convent, this schoolteacher-by-day uses his protractor to stab villains in the eyes. Also he turns into a werewolf under the full moon."
   },
   {
     name: "Count GrapeFang",
@@ -39,7 +39,7 @@ const charList = [
     speed: "❚❚❚❚",
     jump: "❚❚❚❚",
     bio:
-      "Raised on the mean streets of Cyber City X, this half-dog-half-robot has his keen animal senses heightened by algorithms stolen directly from Amazon."
+      "Bitten by a vampire while eating grapes, this creature of the night terrorizes breakfast with muscadine-flavored cereal."
   },
   {
     name: "Karate Alien",
@@ -53,7 +53,7 @@ const charList = [
     speed: "❚❚❚❚❚❚❚",
     jump: "❚❚❚❚",
     bio:
-      "Emerging from an Insectinoid egg-pod that was separated from the nest, this genetically-engineered alien soldier uses his innate skills as a field medic to heal the children of earth... and stab villains in the eyes with a protractor."
+      "Emerging from an Insectinoid egg-pod that was separated from the nest, this genetically-engineered alien soldier uses his innate skills as a karate master to stab villains in the eyes with a protractor."
   }
 ];
 

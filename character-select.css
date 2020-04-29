@@ -12,26 +12,22 @@ body {
     "chargrid"
     "charview1" 
     "charview2";
-  border: 5px maroon solid;
 }
 
 #charview1 {
   grid-area: charview1;
-  border: 5px orange solid;
   display: flex;
   flex-direction: column;
 }
 
 #charview2 {
   grid-area: charview2;
-  border: 5px orange solid;
   display: flex;
   flex-direction: column;
 }
 
 #charview1b {
   grid-area: charview1b;
-  border: 5px green solid;
   font-size: 3vw;
   height: auto;
   width: auto;
@@ -41,7 +37,6 @@ body {
 
 #charview1c {
   grid-area: charview1c;
-  border: 5px green solid;
   height: auto;
   flex-grow: 4;
   padding-left: 3rem;
@@ -64,21 +59,19 @@ body {
 }
 
 #charview2a {
+  padding-top: 2rem;
   grid-area: charview2a;
-  border: 5px green solid;
   height: auto;
 }
 
 #charview2b {
   grid-area: charview2b;
-  border: 5px green solid;
   height: auto;
   font-size: 2vw;
 }
 
 #charview2c {
   grid-area: charview2c;
-  border: 5px green solid;
   font-size: 4.5vw;
   height: auto;
   padding-right: 1rem;
@@ -87,13 +80,13 @@ body {
 
 #charview2d {
   grid-area: charview2d;
-  border: 5px green solid;
   font-size: 2vw;
   padding-right: 1rem;
   padding-left: 1rem;
 }
 
 .chargrid {
+  padding-top: 2rem;
   grid-area: chargrid;
   display: grid;
   grid-template-areas:
@@ -103,42 +96,51 @@ body {
 
 #char1 {
   grid-area: char1;
-  border: 5px purple solid;
+  border: 5px yellow solid;
   height: 20vw;
   background-image: url(images/pp-bot.gif);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 20vw;
+  width: 20vw;
 }
 
 #char2 {
   grid-area: char2;
-  border: 5px purple solid;
+  border: 5px yellow solid;
   height: 20vw;
   background-image: url(images/pp-wolf.gif);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 20vw;
+  width: 20vw;
 }
 
 #char3 {
   grid-area: char3;
-  border: 5px purple solid;
+  border: 5px yellow solid;
   height: 20vw;
   background-image: url(images/pp-drac.gif);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 20vw;
+  width: 20vw;
 }
 
 #char4 {
   grid-area: char4;
-  border: 5px purple solid;
+  border: 5px yellow solid;
   height: 20vw;
   background-image: url(images/pp-alien.gif);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 20vw;
+  width: 20vw;
+}
+
+#char1:hover, #char2:hover, #char3:hover, #char4:hover {
+  border: 5px red solid;
+
 }
 
 img {
@@ -159,13 +161,10 @@ img {
   height: 20vw;
   margin-left: auto;
   margin-right: auto;
-  display: block
+  display: block;
 }
 
 @media only all and (min-width: 900px) {
-  body {
-    background-color: skyblue;
-  }
 
   #box1 {
     grid-template-areas:
@@ -218,22 +217,26 @@ img {
   }
 
   #char1 {
-    height: 10vw;
+    height: 9vw;
     background-size: 9vw;
+    width: 9vw;
   }
 
   #char2 {
-    height: 10vw;
+    height: 9vw;
     background-size: 9vw;
+    width: 9vw;
   }
 
   #char3 {
-    height: 10vw;
+    height: 9vw;
     background-size: 9vw;
+    width: 9vw;
   }
 
   #char4 {
-    height: 10vw;
+    height: 9vw;
     background-size: 9vw;
+    width: 9vw;
   }
 }
