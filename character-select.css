@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Stalinist+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Iceberg&display=swap');
+
+body {
+  background-color: lightgray;
+  font-family: 'Iceberg', cursive;
+}
+
+#box1 {
+  display: grid;
+  grid-template-areas:
+    "chargrid"
+    "charview1" 
+    "charview2";
+}
+
+#charview1 {
+  grid-area: charview1;
+  display: flex;
+  flex-direction: column;
+}
+
+#charview2 {
+  grid-area: charview2;
+  display: flex;
+  flex-direction: column;
+}
+
+#charview1b {
+  grid-area: charview1b;
+  font-size: 3vw;
+  height: auto;
+  width: auto;
+  flex-grow: 1;
+  padding-left: 3rem;
+}
+
+#charview1c {
+  grid-area: charview1c;
+  height: auto;
+  flex-grow: 4;
+  padding-left: 3rem;
+}
+
+#charview2holder {
+  grid-area: charview2holder;
+  display: grid;
+  grid-template-areas:
+  "charview2a charview2b";
+  flex-grow: 1;
+}
+
+#charview2holder2 {
+  grid-area: charview2holder2;
+  display: grid;
+  grid-template-areas:
+  "charview2c charview2d";
+  flex-grow: 3;
+}
+
+#charview2a {
+  padding-top: 2rem;
+  grid-area: charview2a;
+  height: auto;
+}
+
+#charview2b {
+  grid-area: charview2b;
+  height: auto;
+  font-size: 2vw;
+}
+
+#charview2c {
+  grid-area: charview2c;
+  font-size: 4.5vw;
+  height: auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+#charview2d {
+  grid-area: charview2d;
+  font-size: 2vw;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.chargrid {
+  padding-top: 2rem;
+  grid-area: chargrid;
+  display: grid;
+  grid-template-areas:
+  "char1 char2"
+  "char3 char4";
+}
+
+#char1 {
+  grid-area: char1;
+  border: 5px yellow solid;
+  height: 20vw;
+  background-image: url(images/pp-bot.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20vw;
+  width: 20vw;
+}
+
+#char2 {
+  grid-area: char2;
+  border: 5px yellow solid;
+  height: 20vw;
+  background-image: url(images/pp-wolf.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20vw;
+  width: 20vw;
+}
+
+#char3 {
+  grid-area: char3;
+  border: 5px yellow solid;
+  height: 20vw;
+  background-image: url(images/pp-drac.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20vw;
+  width: 20vw;
+}
+
+#char4 {
+  grid-area: char4;
+  border: 5px yellow solid;
+  height: 20vw;
+  background-image: url(images/pp-alien.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20vw;
+  width: 20vw;
+}
+
+#char1:hover, #char2:hover, #char3:hover, #char4:hover {
+  border: 5px red solid;
+
+}
+
+img {
+  height: 8vw;
+}
+
+.wacky {
+  background-image: url(images/wacky.jpg);
+  background-size: 300px;
+}
+
+.char-img {
+  padding-top: 2rem;
+  height: 45vw;
+}
+
+.top-img {
+  height: 20vw;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+@media only all and (min-width: 900px) {
+
+  #box1 {
+    grid-template-areas:
+    "chargrid chargrid"
+    "charview1 charview2";
+  }
+
+  #charview1b {
+    width: auto;
+  }
+
+  #charview1 {
+    height: 40em;
+    width: 33vw;
+  }
+
+  #charview2 {
+    height: 40em;
+    width: 60vw;
+  }
+
+  .chargrid {
+    grid-template-areas: 
+    "char1 char2 char3 char4";
+  }
+
+  #charview2a {
+    height: auto;
+  }
+
+  #charview2b {
+    height: auto;
+  }
+
+  #charview2c {
+    font-size: 1.8rem;
+    height: auto;
+  }
+
+  .top-img {
+    height: 11vw;
+  }
+
+  .char-img {
+    height: 25vw;
+  }
+
+  #charview1c {
+    height: auto;
+  }
+
+  #char1 {
+    height: 9vw;
+    background-size: 9vw;
+    width: 9vw;
+  }
+
+  #char2 {
+    height: 9vw;
+    background-size: 9vw;
+    width: 9vw;
+  }
+
+  #char3 {
+    height: 9vw;
+    background-size: 9vw;
+    width: 9vw;
+  }
+
+  #char4 {
+    height: 9vw;
+    background-size: 9vw;
+    width: 9vw;
+  }
+}
